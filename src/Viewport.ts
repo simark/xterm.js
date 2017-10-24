@@ -38,7 +38,7 @@ export class Viewport implements IViewport {
   }
 
   public onThemeChanged(colors: IColorSet): void {
-    this.viewportElement.style.backgroundColor = colors.background;
+    //this.viewportElement.style.backgroundColor = colors.background;
   }
 
   /**

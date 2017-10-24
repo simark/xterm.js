@@ -74,7 +74,11 @@ function createTerminal() {
   term = new Terminal({
     cursorBlink: optionElements.cursorBlink.checked,
     scrollback: parseInt(optionElements.scrollback.value, 10),
-    tabStopWidth: parseInt(optionElements.tabstopwidth.value, 10)
+    tabStopWidth: parseInt(optionElements.tabstopwidth.value, 10),
+    fontSize: 13,
+    theme: {
+      background: '#600',
+    },
   });
   term.on('resize', function (size) {
     if (!pid) {
